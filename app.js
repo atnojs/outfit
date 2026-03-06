@@ -842,7 +842,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const callTextAPI = async (prompt) => {
         const proxyUrl = 'proxy.php';
         // CAMBIO DE MODELO A GEMINI 3 PRO PREVIEW (Si está disponible)
-        const targetApiUrl = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-3-pro-image-preview:generateContent';
+        const targetApiUrl = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-image-preview:generateContent';
         const finalPrompt = composePrePrompt(prompt, { integration: false });
 
         const safetySettings = [
