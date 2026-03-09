@@ -866,7 +866,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const callMultimodalAPI = async (prompt, base64Image) => {
         const proxyUrl = 'proxy.php';
         // CAMBIO DE MODELO A GEMINI 3 PRO PREVIEW
-        const targetApiUrl = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-3-pro-image-preview:generateContent';
+        const targetApiUrl = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-image-preview:generateContent';
 
         const cleanBase64 = base64Image.split(',')[1];
         const finalPrompt = composePrePrompt(prompt, { integration: false });
@@ -911,7 +911,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const proxyUrl = 'proxy.php';
         // CAMBIO DE MODELO A GEMINI 3 PRO PREVIEW
         // NOTA: Si este modelo no soporta imagen, fallará.
-        const targetApiUrl = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-3-pro-image-preview:generateContent';
+        const targetApiUrl = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-image-preview:generateContent';
 
         const cleanBase64 = base64Image.split(',')[1];
         const finalPrompt = composePrePrompt(prompt);
